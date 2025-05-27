@@ -33,9 +33,47 @@ Built using Microsoft Power BI, it delivers insights, supports scenario comparis
 
 ### Step 3: Data Modeling
 • Build a star schema:
-   - Fact Table: Sales (contains Sales, Profit, Quantity, etc.)
-   - Dimension Tables: Product, Customer, Region, Time
-• Define relationships using unique keys such as Customer ID and Product ID.
+   - Fact Table:
+| Column             | Description                         |
+| ------------------ | ----------------------------------- |
+| Order Date         | When the order was placed           |
+| Ship Date          | When it was shipped                 |
+| Sales              | Revenue from the order              |
+| Profit             | Profit from the sale                |
+| Discount           | Discount applied                    |
+| Quantity           | Number of units sold                |
+| Cost of Goods Sold | Estimated cost of the products sold |
+| Order ID           | Transaction identifier              |
+
+   - Dimension Tables:
+   - Product Dimension
+| Column       | Description               |
+| ------------ | ------------------------- |
+| Product ID   | Unique product code       |
+| Product Name | Name of the product       |
+| Category     | High-level grouping       |
+| Sub-Category | Sub-group within category |
+
+   - Customer Dimension
+| Column      | Description           |
+| ----------- | --------------------- |
+| Customer ID | Unique identifier     |
+| City        | City of the customer  |
+| State       | State of the customer |
+| Region      | Region                |
+
+   - Geography Dimension
+| Column | Description       |
+| ------ | ----------------- |
+| State  | State or Province |
+| Region | Business region   |
+
+   - Time Dimension
+| Column                                    | Description           |
+| ----------------------------------------- | --------------------- |
+| Order Date                                | Actual date of sale   |
+| Ship Date                                 | When the item shipped |
+
 
 ### Step 4: DAX Measures
 • Total Sales = SUM('Sales'[Sales])
