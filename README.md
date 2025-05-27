@@ -22,10 +22,14 @@ Built using Microsoft Power BI, it delivers insights, supports scenario comparis
 - Unused columns (Row ID,Order ID, Country and Postcode) was removed.
 <img width="1268" alt="Screenshot 2025-05-27 at 10 21 03" src="https://github.com/user-attachments/assets/6d0a783f-00a1-4334-8d94-7873f76e69f0" />
 
-- Data types and format were inspected to make sure they are in the appropriate.
-<img width="1273" alt="Screenshot 2025-05-27 at 10 23 32" src="https://github.com/user-attachments/assets/6b248e3b-8693-4abf-b32e-21449b9e51c1" />
 
-- Rename columns for consistency (e.g., CoGS to Cost of Goods Sold).
+-  Sales, Profit and CoGS columns were changed from decimal number to fixed decimal number.
+<img width="1273" alt="Screenshot 2025-05-27 at 10 33 45" src="https://github.com/user-attachments/assets/eb40713e-a017-408d-864d-04151bffa515" />
+
+- CoGS to Cost of Goods Sold was renamed
+<img width="1272" alt="Screenshot 2025-05-27 at 10 37 32" src="https://github.com/user-attachments/assets/b9e2e802-25c1-4c30-b1b1-c719fe7bf5f9" />
+
+
 
 ### Step 3: Data Modeling
 • Build a star schema:
