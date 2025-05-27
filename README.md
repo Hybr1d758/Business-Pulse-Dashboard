@@ -14,14 +14,18 @@ Built using Microsoft Power BI, it delivers insights, supports scenario comparis
 
 ## 3. Development Steps
 ### Step 1: Data Source Setup
-• Load the Excel file 'Superstore - Sales.xlsx'.
-• Use the 'Sales' sheet, which includes key fields such as Order Date, Customer, Region, Category, Sales, Profit, and Quantity.
+- Load the Excel file 'Superstore - Sales.xlsx'.
+- Use the 'Sales' sheet, which includes key fields such as Order Date, Customer, Region, Category, Sales, Profit, and Quantity.
 <img width="1470" alt="Screenshot 2025-05-27 at 10 14 38" src="https://github.com/user-attachments/assets/7e7c2154-6e69-4688-b695-bab4f76c18fe" />
 
 ### Step 2: Data Cleaning in Power Query
-• Unused columns like Row ID was removed.
-• Check data types and format appropriately.
-• Rename columns for consistency (e.g., CoGS to Cost of Goods Sold).
+- Unused columns (Row ID,Order ID, Country and Postcode) was removed.
+<img width="1268" alt="Screenshot 2025-05-27 at 10 21 03" src="https://github.com/user-attachments/assets/6d0a783f-00a1-4334-8d94-7873f76e69f0" />
+
+- Data types and format were inspected to make sure they are in the appropriate.
+<img width="1273" alt="Screenshot 2025-05-27 at 10 23 32" src="https://github.com/user-attachments/assets/6b248e3b-8693-4abf-b32e-21449b9e51c1" />
+
+- Rename columns for consistency (e.g., CoGS to Cost of Goods Sold).
 
 ### Step 3: Data Modeling
 • Build a star schema:
