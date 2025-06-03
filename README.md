@@ -138,7 +138,6 @@ Relationships set up:
 
 ### Step 6: Dashboard Design
 - Create card visuals for KPIs: Total Sales, Profit, Quantity, Profit Margin.
-
 - Use bar/column charts for Sales by Category, Profit by Region.
 - Line chart for sales trends over time.
 - Add slicers for Category, Segment, Region, Order Date.
