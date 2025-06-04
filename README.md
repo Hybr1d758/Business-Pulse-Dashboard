@@ -141,6 +141,7 @@ Relationships set up:
 - Use bar/column charts for Sales by Category, Profit by Region.
 - Line chart for sales trends over time.
 - Add slicers for Category, Segment, Region, Order Date.
+  
 
 
 
