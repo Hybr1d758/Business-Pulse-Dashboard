@@ -141,7 +141,7 @@ Relationships set up:
 - Use bar/column charts for Sales by Category, Profit by Region.
 - Line chart for sales trends over time.
 - Add slicers for Category, Segment, Region, Order Date.
-  
+<img width="768" alt="Screenshot 2025-06-05 at 11 19 26" src="https://github.com/user-attachments/assets/bcfb308a-4d53-463d-b71a-fffa79fa08d4" />
 
 
 
@@ -149,11 +149,12 @@ Relationships set up:
 - Work in a 'Development' workspace.
 - Save versioned files (e.g., BusinessPulse_v1_2025-05-25.pbix).
 - Include comments in DAX measures for maintainability.
+<img width="1467" alt="Screenshot 2025-06-05 at 11 20 23" src="https://github.com/user-attachments/assets/8d12f5c5-a85a-42dc-af0c-7b44c79cb15a" />
 
 ### Step 8: Scalability and Governance
 - Optimize model (hide unused columns, avoid calculated columns).
 - Prepare for Row-Level Security based on user roles or regions.
 - Document model structure and maintain a version control log.
+<img width="1470" alt="Screenshot 2025-06-05 at 11 40 17" src="https://github.com/user-attachments/assets/0e758c7f-a9b3-48df-b2f6-595429c0848a" />
 
-### 4. Project Summary
-This Power BI project demonstrates the design of a scalable, role-driven analytics solution using structured modeling, clear business metrics, and interactive visuals. It is intended for both learning and professional use.
+
