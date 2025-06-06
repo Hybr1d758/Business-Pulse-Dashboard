@@ -19,6 +19,7 @@ User Guide
 
 
 ## 1. Introduction 
+The dashboard aggregates key performance indicators (KPIs) in one place, eliminating the need for scattered reports or disconnected Excel sheets. By providing interactive dashboards, scenario comparisons (Actual vs. Budget vs. Forecast), and role-based views, the project aims to help stakeholders make data-driven decisions faster and with more confidence.
 The Business Pulse Dashboard is an integrated reporting solution designed to monitor and visualize key business performance indicators across sales, operations, finance, and planning. 
 Built using Microsoft Power BI, it delivers insights, supports scenario comparisons (Actual, Budget, Forecast), and empowers users at all levels with interactive and role-based dashboards.
 
