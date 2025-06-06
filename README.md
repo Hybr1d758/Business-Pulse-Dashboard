@@ -1,27 +1,54 @@
 # Business-Pulse-Dashboard
 
+User Guide
 
-## 1. Project Overview
+🗂️ Table of Contents
+- Introduction
+- Prerequisites
+- Installation & Setup
+- Development Steps
+- Data Cleaning in Power Query
+- Data Modeling
+- Define Relationships in the Data Model
+- DAX Measures
+- Dashboard Design
+- Development Lifecycle Practice
+- Scalability and Governance
+- Troubleshooting
+
+
+
+## 1. Introduction 
 The Business Pulse Dashboard is an integrated reporting solution designed to monitor and visualize key business performance indicators across sales, operations, finance, and planning. 
 Built using Microsoft Power BI, it delivers insights, supports scenario comparisons (Actual, Budget, Forecast), and empowers users at all levels with interactive and role-based dashboards.
 
-## 2. Tools and Technologies
-- Microsoft Power BI Desktop and Power BI Service
+## 2. Prerequisites 
+- Microsoft Power BI Desktop and Power BI Service installed 
 - Microsoft Excel (sample data source)
 - Power Query for data transformation
 - Data Analysis Expressions (DAX) for calculations
+- Basic knowledge of Power BI recommended but not required.
 
 
-## 3. Development Steps
+## 3. Installation & Setup
+- Clone the Repository:git clone https://github.com/Hybr1d758/Business-Pulse-Dashboard.git
+- Open the Dashboard:
+- Navigate to the cloned folder.
+- Open the .pbix file with Power BI Desktop.
+
+
+## 4. Development Steps
 ### Step 1: Data Source Setup
+- Update the data source paths to point to your local or server data
 - Load the Excel file 'Superstore - Sales.xlsx'.
+- Click Refresh on the Power BI toolbar to load your data.
 - Use the 'Sales' sheet, which includes key fields such as Order Date, Customer, Region, Category, Sales, Profit, and Quantity.
 <img width="1470" alt="Screenshot 2025-05-27 at 10 14 38" src="https://github.com/user-attachments/assets/7e7c2154-6e69-4688-b695-bab4f76c18fe" />
   
 
    
    
-### Step 2: Data Cleaning in Power Query
+### Step 5: Data Cleaning in Power Query
 - Unused columns (Row ID,Order ID, Country and Postcode) was removed.
 - Remove Duplicate from the dataset and group by the customer ID to check if there are any duplicates left
 <img width="1268" alt="Screenshot 2025-05-27 at 10 21 03" src="https://github.com/user-attachments/assets/6d0a783f-00a1-4334-8d94-7873f76e69f0" />
@@ -38,7 +65,7 @@ Built using Microsoft Power BI, it delivers insights, supports scenario comparis
   
 
 
-### Step 3: Data Modeling
+### Step 6: Data Modeling
 - Build a star schema:
 - NOTE: Duplicate the sales table in order to have one for your fact table and the others for the dimensions table.
 <img width="1270" alt="Screenshot 2025-05-27 at 12 04 44" src="https://github.com/user-attachments/assets/e9eece9d-711f-421e-83a2-bf222c74790a" />
@@ -111,7 +138,7 @@ Built using Microsoft Power BI, it delivers insights, supports scenario comparis
 
 
 
-Step 4: Define Relationships in the Data Model
+### Step 7: Define Relationships in the Data Model
 - Open the Model view in Power BI.
 - Connect foreign keys in the Fact Table to the primary keys in the Dimension Tables.
 
@@ -124,7 +151,7 @@ Relationships set up:
 
 
 
-### Step 5: DAX Measures
+### Step 8: DAX Measures
 - Total Sales = SUM('Sales'[Sales])
 - Total Profit = SUM('Sales'[Profit])
 - Profit Margin = DIVIDE([Total Profit], [Total Sales])
@@ -136,7 +163,7 @@ Relationships set up:
 
 
 
-### Step 6: Dashboard Design
+### Step 9: Dashboard Design
 - Create card visuals for KPIs: Total Sales, Profit, Quantity, Profit Margin.
 - Use bar/column charts for Sales by Category, Profit by Region.
 - Line chart for sales trends over time.
@@ -145,16 +172,23 @@ Relationships set up:
 
 
 
-### Step 7: Development Lifecycle Practice
+### Step 10: Development Lifecycle Practice
 - Work in a 'Development' workspace.
 - Save versioned files (e.g., BusinessPulse_v1_2025-05-25.pbix).
 - Include comments in DAX measures for maintainability.
 <img width="1467" alt="Screenshot 2025-06-05 at 11 20 23" src="https://github.com/user-attachments/assets/8d12f5c5-a85a-42dc-af0c-7b44c79cb15a" />
 
-### Step 8: Scalability and Governance
+### Step 11: Scalability and Governance
 - Optimize model (hide unused columns, avoid calculated columns).
 - Prepare for Row-Level Security based on user roles or regions.
 - Document model structure and maintain a version control log.
 <img width="1470" alt="Screenshot 2025-06-05 at 11 40 17" src="https://github.com/user-attachments/assets/0e758c7f-a9b3-48df-b2f6-595429c0848a" />
 
+
+## Step 12. Troubleshooting
+| Issue                          | Solution                                       |
+| ------------------------------ | ---------------------------------------------- |
+| Dashboard visuals not updating | Check data source connections and refresh      |
+| Role-based views not working   | Confirm RLS configuration and user permissions |
+| Data errors or blank visuals   | Ensure correct file paths and data formats     |
 
